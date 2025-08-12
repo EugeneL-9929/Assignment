@@ -9,6 +9,8 @@ header{
 
 nav{
     background-color: #e5ff00;
+    display: inline-block;
+    width: 80%;
 }
 
 main{
@@ -20,12 +22,14 @@ footer{
     background-color: antiquewhite;
 }
 
+
 li{
     display: inline-block;
     width: 30%;
     text-align: center;
     background-color: aquamarine;
 }
+
 
 h1{
     text-align: center;
@@ -35,4 +39,30 @@ h1{
 
 p{
     line-height: 150%;
+}
+
+header img{
+    width: 10%;
+    position: relative;
+    top: 20px;
+}
+
+.grid_content{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 15px;
+
+}
+
+div.grid_content img{
+    width: 100%;
+}
+
+.flex_content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }

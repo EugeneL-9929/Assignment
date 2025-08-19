@@ -1,32 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>HTML5 Course</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+	<meta charset="UTF-8">
+	<title>Photo Gallery</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
 </head>
-
 <body>
-  <main>
-    <h1>HTML5 Course</h1>
-    <p>I am so happy to join this course! However, to fully understand how the web design goes! I need to take another two courses.</p>
-    <hr>
-    <p>Here is a full list of tools,</p>
-    <ul>
-      <li><a href="#html5">HTML5</a></li>
-      <li><a href="#css">CSS3</a></li>
-      <li><a href="#js">JavaScript</a></li>
-    </ul>
-    <hr>
-    <p>You can get access to the wikipedia pages about the tools by clicking the images.</p>
-    <ol>
-      <li><a href="https://zh.wikipedia.org/wiki/HTML" id="html5"><img src="Images/HTML5_logo.png" alt="HTML5 in wikipedia", width="50%"></a></li>
-      <li><a href="https://zh.wikipedia.org/wiki/CSS" id="css"><img src="Images/CSS_LOGO.svg" alt="CSS in wikipedia", width="50%"></a></li>
-      <li><a href="https://wuu.wikipedia.org/wiki/JavaScript" id="js"><img src="Images/JavaScript.png" alt="Javascript in wikipedia", width="50%"></a></li>
-    </ol>
-  </main>
-</body>
+	
+	<div id = "image">
+		Hover over an image below to display here.
+	</div>
+	
+	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
+	
+	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
 
+</body>
 </html>

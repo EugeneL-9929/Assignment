@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Photo Gallery</title>
 	<link rel="stylesheet" href="css/gallery.css">
-	<script src = "js/gallery.js"></script>
+	<script src="js/gallery.js"></script>
 </head>
-<body>
-	
-	<div id = "image">
+
+<body onload="add_tabfocus()">
+
+	<div id="image">
 		Hover over an image below to display here.
 	</div>
-	
-	<img class = "preview" alt = "Styling with a Bandana" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" alt = "With My Boy" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon2.JPG" onmouseover = "upDate(this)" onmouseout = "unDo()">
-	
-	<img class = "preview" src = "https://s3-us-west-2.amazonaws.com/s.cdpn.io/389177/bacon3.jpg" alt = "Young Puppy" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+	<img class="preview" alt="Monday" src="image/Monday.png" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
+
+	<img class="preview" alt="Tuesday" src="image/Tuesday.png" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
+
+	<img class="preview" src="image/Wednesday.png" alt="Wednesday" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
+
+	<img class="preview" alt="Thursday" src="image/Thursday.png" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
+
+	<img class="preview" alt="Friday" src="image/Friday.png" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
+
+	<img class="preview" src="image/Saturday.png" alt="Saturday" onmouseover="upDate(this)" onmouseout="unDo()" ,
+		onfocus="upDate(this)" , onblur="unDo()">
 
 </body>
+
 </html>
